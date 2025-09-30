@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <style>
+        body {
+            font-family: sans-serif, Arial, Helvetica;
+            background: #f5f7f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+        }
+
+        .contenue {
+            text-align: center;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #333;
+        }
+
+        .carte {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 1);
+            width: 300px;
+            margin: auto;
+        }
+
+        .detail {
+            color: rgb(94, 2, 2);
+            font-size: 14px;
+        }
+
+        h1 {
+            margin: 10px 0 20px;
+        }
+
+        form {
+
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .options a {
+            text-decoration: none;
+            color: #2061e2;
+        }
+
+        .l {
+            border: 1px solid #ddd;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .g {
+            border: 1px solid #ddd;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        .footer {
+            font-size: 12px;
+            margin-top: 15px;
+
+        }
+
+        .carte h1 {
+            color: rgb(83, 7, 7);
+        }
+
+        .footer a {
+            color: #2f80ed;
+            text-decoration: none;
+        }
+        .info input[type="password"]{
+            margin-top: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        form input[type="submit"]:hover{
+            background-color: rgb(70, 2, 2);
+            color: white;
+            scale: 0.9;
+            transition: 0.6s;
+            border-radius: 5%;
+        }
+        form input[type="submit"]{
+            width: 160px;
+            height: 40px;
+            background-color: white;
+            transition: 0.4s;
+            border: rgb(81, 81, 81);
+        }
+        .g:hover{
+            background-color: #2061e2;
+            transition: 0.6s;
+            scale: 0.9;
+        }
+        .g img{
+            height: 10px;
+        }
+        .href{
+            text-decoration: none;
+            color: black;
+            transition: 0.4s;
+            
+        }
+        .href:hover{
+            text-decoration: overline;
+            transition: 0.6s;
+            transform: initial;
+            scale: 0.9;
+        }
+        .info input{
+            transition: 0.4s;
+            height: 20px;
+        }
+        .info input:hover{
+            background-color: rgb(189, 189, 189);
+            border: none;
+            transition: 0.5s;
+        }
+                @media only screen and (max-width: 768px) {
+            body {
+                height: auto;
+                min-height: 100vh;
+                padding: 20px 10px;
+                align-items: flex-start;
+            }
+
+            .logo {
+                position: relative;
+                top: 0;
+                left: 0;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .logo img {
+                width: 60px;
+                height: 40px;
+            }
+
+            .carte {
+                width: 90%;
+                max-width: 350px;
+                padding: 20px 15px;
+                margin: 0 auto;
+            }
+
+            .carte h1 {
+                font-size: 24px;
+                margin: 5px 0 15px;
+            }
+
+            .detail {
+                font-size: 12px;
+            }
+
+            form {
+                gap: 15px;
+            }
+
+            .info input {
+                width: 100%;
+                box-sizing: border-box;
+                height: 25px;
+                font-size: 14px;
+            }
+
+            form input[type="submit"] {
+                width: 100%;
+                height: 35px;
+                font-size: 14px;
+            }
+
+            .g {
+                width: 100%;
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .g img {
+                height: 12px;
+            }
+
+            .options label {
+                font-size: 11px;
+            }
+
+            .footer {
+                font-size: 11px;
+            }
+
+            .href {
+                font-size: 13px;
+            }
+        }
+
+        /* Pour les très petits écrans */
+        @media only screen and (max-width: 480px) {
+            body {
+                padding: 10px 5px;
+            }
+
+            .carte {
+                width: 95%;
+                padding: 15px 10px;
+            }
+
+            .carte h1 {
+                font-size: 20px;
+            }
+
+            .detail {
+                font-size: 11px;
+            }
+
+            form {
+                gap: 12px;
+            }
+
+            .info input {
+                height: 22px;
+                font-size: 12px;
+            }
+
+            form input[type="submit"] {
+                height: 32px;
+                font-size: 12px;
+            }
+
+            .g {
+                padding: 6px;
+                font-size: 12px;
+            }
+
+            .options label {
+                font-size: 10px;
+            }
+
+            .footer {
+                font-size: 10px;
+            }
+
+            .href {
+                font-size: 12px;
+            }
+        }
+
+        /* Pour l'orientation paysage sur mobile */
+        @media only screen and (max-height: 500px) and (orientation: landscape) {
+            body {
+                height: auto;
+                min-height: 100vh;
+                padding: 10px;
+            }
+
+            .contenue {
+                width: 100%;
+            }
+
+            .carte {
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenue">
+        <h2 class="logo"><img src="logoc_r-fotor-2025092518549-removebg-preview.png" alt="" style="width: 80px;height: 50px;opacity: 50%;"></h2>
+        <div class="carte">
+            <p class="detail">C&R</p>
+            <h1>bienvenue</h1>
+            <form>
+                <div class="info">
+                    <input type="email" placeholder="email adress">
+                    <input type="password" placeholder="mots de passe " required>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox">se souvenir de moi pour 30 jrs </label>
+                </div>
+                <input type="submit" name="sub" id="" value="connexion">
+                <a href="#" class="href"> mot de passe oublié ? </a>
+                <button class="g" type="button" ><img src="google-removebg-preview.png" alt=""> inscription avec google </button>
+                <p class="footer">(si aucun compte) <a href="signin.html"> Inscription</a></p>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

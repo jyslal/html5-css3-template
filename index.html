@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .welcome {
+            height: 40px;
+            display: flex;
+            background-color: rgb(99, 8, 8);
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .welcome p {
+            
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .welcome p a {
+            text-decoration: none;
+            color: white
+        }
+
+        .welcome p a:hover {
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+
+        .detail .a {
+            height: 70px;
+            margin-left: 5%;
+            width: 80%;
+            border: 1px;
+            display: flex;
+            color: aliceblue;
+        }
+
+        .detail .a div input {
+            border-width: 1px;
+            height: 50px;
+            border-color: rgb(107, 107, 107);
+        }
+
+        .detail .a div input[type="search"] {
+            width: 76%;
+        }
+
+        .detail .a div input[type="submit"] {
+            background-color: rgb(155, 0, 0);
+            color: white;
+            transition: 0.4s;
+        }
+
+        .detail .a div input[type="submit"]:hover {
+            background-color: rgb(104, 0, 0);
+            transition: 0.6s;
+            color: white;
+        }
+
+        .detail,
+        p,
+        input:active {
+            border-width: 1px;
+            border-color: rgb(107, 107, 107);
+        }
+
+        .detail {
+            display: flex;
+            height: 70px;
+            /*justify-content: space-between;*/
+            row-gap: 1%;
+            width: 100%;
+        }
+
+        .detail .b a {
+            text-decoration: none;
+            color: rgb(56, 2, 2);
+        }
+
+        .detail .b a {
+            font-size: 20px;
+            transition: 0.4s;
+        }
+
+        .detail .b a:hover {
+            text-decoration: overline;
+            transition: 0.6s;
+            text-decoration-color: rgb(116, 5, 5);
+        }
+        .category{
+            width: 100%;
+            height: 38px;
+            display: flex;
+            gap: 40%;
+            background-color: rgb(51, 51, 51);
+        }
+        .category a{
+            text-decoration: none;
+            color: rgb(241, 104, 104);
+         
+        }
+        .category p{
+               transition: 0.4s;
+        }
+        .category p:hover{
+            text-decoration: overline;
+            color: rgb(241, 104, 104);
+            scale: 0.9;
+            transition: 0.6s;
+        }
+        .foot-a{
+            width: 100%;
+            border: black;
+            margin-top: 40%;
+            height: 250px;
+            background-color: rgb(226, 223, 223);
+        }
+        .foot-a h2{
+            color: rgb(89, 6, 6);
+            margin-left: 5%;
+        }
+        .loc{
+            display: flex;
+            justify-content: space-between;
+        }
+        @media only screen and (max-width: 768px) {
+            .welcome {
+                height: auto;
+                flex-direction: column;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .welcome p {
+                font-size: 12px;
+                margin: 5px 2%;
+            }
+
+            .detail {
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+            }
+
+            .detail .a {
+                width: 95%;
+                margin-left: 0;
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+
+            .detail .a div {
+                width: 100%;
+                display: flex;
+                margin-top: 10px;
+            }
+
+            .detail .a div input[type="search"] {
+                width: 70%;
+            }
+
+            .detail .a div input[type="submit"] {
+                width: 30%;
+            }
+
+            .detail .b {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .detail .b a {
+                font-size: 16px;
+            }
+
+            .category {
+                height: auto;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 0;
+            }
+
+            .category p {
+                margin: 5px 0;
+                text-align: center;
+            }
+
+            .foot-a {
+                margin-top: 40%;
+                height: 200px;
+                padding: 20px 0;
+            }
+
+            .loc {
+                flex-direction: column;
+                text-align: center;
+            }
+            .foot-a{
+                height: 400px;
+            }
+            .loc h2 {
+                margin: 10px 0;
+            }
+        }
+
+        /* Pour les très petits écrans */
+        @media only screen and (max-width: 480px) {
+            .welcome p {
+                font-size: 10px;
+            }
+
+            .detail .a div input {
+                height: 40px;
+            }
+
+            .detail .b a {
+                font-size: 14px;
+            }
+
+            .category a {
+                font-size: 14px;
+            }
+
+            .foot-a h2 {
+                font-size: 18px;
+            }
+            .foot-a{
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header style="width: 100%;">
+        <div class="welcome">
+            <p style="margin-left: 2%;">Welcome on C&R !!!</p>
+            <p style="margin-right: 2%;">whatsapp: <a href="#lienwhatsapp">num whatsapp</a> email: <a
+                    href="#lienverslemail">mail@gmail.com</a> horaire: heure</p>
+        </div>
+        <div class="detail">
+            <div class="a">
+                <p><a href="#"><img src="logoc_r-fotor-2025092518549-removebg-preview.png" alt="" style="height: 53px;"></a> </p>
+                <div style="width: 100%; margin-top: 10px;">
+                    <input type="search"><input type="submit" name="search" value="search">
+                </div>
+            </div>
+            <div class="b">
+                <div style="margin-top: 10px;">
+                    <a href="login.html">seconnecter/</a><a href="signin.html">s'inscrire</a>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+                <p style="margin-left: 4%;"><a href="" >pc</a></p>
+                <p><a href="">accessoire pour pc</a></p>
+                <p><a href="">materiel audio</a></p>
+            </div>
+    </header>
+    <section>
+
+    </section>
+    <footer>
+        <div class="foot-a">
+            <div class="loc">
+                <h2>localisation</h2>
+                <h2 style="margin-right: 5%;">contact</h2>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
